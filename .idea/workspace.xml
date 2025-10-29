@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce52c618-2bb4-4447-982f-47a041ba70f2" name="Changes" comment="3 часть">
+      <change afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/catalog/base_generic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/catalog/book_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/catalog/book_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/locallibrary.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/locallibrary.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/base_generic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/templates/catalog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locallibrary/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/locallibrary/catalog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -34,6 +43,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
@@ -48,9 +58,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/locallibrary/catalog/templates/catalog" />
+      <recent name="$PROJECT_DIR$/locallibrary/catalog" />
+      <recent name="$PROJECT_DIR$/locallibrary" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/locallibrary" />
     </key>
   </component>
   <component name="RunManager">
@@ -97,6 +109,8 @@
       <updated>1761545399582</updated>
       <workItem from="1761545400968" duration="6633000" />
       <workItem from="1761636561149" duration="360000" />
+      <workItem from="1761700887156" duration="9285000" />
+      <workItem from="1761710240413" duration="312000" />
     </task>
     <task id="LOCAL-00001" summary="3 часть">
       <option name="closed" value="true" />
