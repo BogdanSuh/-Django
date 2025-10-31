@@ -1,0 +1,46 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>All Borrowed Books</h1>
+
+    {% if all_borrowed_books %}
+        <ul>
+            {% for bookinst in all_borrowed_books %}
+                <li class="{% if bookinst.is_overdue %}text-danger{% endif %}">
+                    <a href="{% url 'book-detail' bookinst.book.pk %}">{{ bookinst.book.title }}</a>
+                    — Borrowed by:
+                    <strong>{{ bookinst.borrower.get_full_name|default:bookinst.borrower.username }}</strong>
+                    {% if bookinst.due_back %}
+                        (Due: {{ bookinst.due_back }})
+                    {% endif %}
+                    {% if perms.catalog.can_mark_returned %}
+                        — <a href="{% url 'renew-book-librarian' bookinst.pk %}">Renew</a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+
+        {% if is_paginated %}
+            <div class="pagination">
+                <span class="page-links">
+                    {% if page_obj.has_previous %}
+                        <a href="{% url 'all-borrowed' %}?page=1">&laquo; first</a>
+                        <a href="{% url 'all-borrowed' %}?page={{ page_obj.previous_page_number }}">previous</a>
+                    {% endif %}
+
+                    <span class="current">
+                        Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                    </span>
+
+                    {% if page_obj.has_next %}
+                        <a href="{% url 'all-borrowed' %}?page={{ page_obj.next_page_number }}">next</a>
+                        <a href="{% url 'all-borrowed' %}?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                    {% endif %}
+                </span>
+            </div>
+        {% endif %}
+
+    {% else %}
+        <p>No books are currently on loan.</p>
+    {% endif %}
+{% endblock %}

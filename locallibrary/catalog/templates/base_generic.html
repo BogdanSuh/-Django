@@ -27,6 +27,7 @@
                     {% if user.is_authenticated %}
                         <li>User: {{ user.get_username }}</li>
                         <li><a href="{% url 'my-borrowed' %}">My Borrowed</a></li>
+                        <li><a href="{% url 'all-borrowed' %}">All Borrowed</a></li>
                         <li>
                             <form action="{% url 'logout' %}" method="post" style="display: inline;">
                                 {% csrf_token %}
